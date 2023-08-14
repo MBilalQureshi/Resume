@@ -11,11 +11,12 @@
 <body>
     <header>
         <!-- a standard practice, you could call it in a best practice, that when you have a logo on your page, that logo should be a link. And it should always take you to your homepage. In our case, the profile photo will act as our logo -->
-        <div class="row">
+        <!-- to remove space before and after col use no-gutters -->
+        <div class="row no-gutters">
             <a href="index.html" class="col-md-4 logo">
             </a>
             <div class="col-md-8">
-                <div class="row bg-color-name-title">
+                <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
                         <h1 class="name">
                             Rosie Osaka
@@ -25,10 +26,11 @@
                         </h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col">
                         <!-- we're going to use the class of list-inline, which is supplied by Bootstrap and stops a list from displaying vertically and displays it horizontally instead. -->
-                        <ul id="nav" class="list-inline">
+                        <!-- HACK: We used the menucontainer class to close the gaps between the nav elements, set font-size to 0, and to make written items visible again target #nav li { font-size:14px and padding to 0}-->
+                        <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home"><a href="#"><span>Home</span></a></li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume"><a href="#"><span>Resume</span></a></li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact"><a href="#"><span>Contact</span></a></li>

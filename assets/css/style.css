@@ -26,10 +26,10 @@
 
 /* .row{
     border:2px solid green;
-}
+}*/
 .row .col{
     border:2px solid red;
-} */
+} 
 /* -------------------------------Heading */
 
 header{
@@ -68,3 +68,18 @@ header{
     margin-bottom: 90px;
     color: #fff
 }
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+/* HACK: We used the menucontainer class to close the gaps between the nav elements, set font-size to 0, and to make written items visible again target #nav li { font-size:14px and padding to 0} */
+.menucontainer{
+    font-size: 0;
+}
+
+#nav li {
+    font-size:14px;
+    padding: 0;
+}
+/* HACK END */
