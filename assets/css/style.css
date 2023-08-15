@@ -163,3 +163,52 @@ footer{
     color: #fafafa;
     min-height: 120px;
 }
+
+.cv-pdf i{
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    /* we also want to do is when we hover over this is have our icon change to a dark, rich orange color.
+    Now, I'm going to put the transitions here, rather than in the hover pseudo-element.
+    The reason for this is that you always want to put the transitions in the parent element, rather than the hovered.
+    This means that the transition will take effect when the mouse hovers over and when the mouse leaves. */
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
+
+/* Now, we want above mentioned transition to take effect */
+.cv-pdf i:hover{
+    color: #e84610;
+}
+
+.social-links{
+    padding-bottom: 15px;
+}
+
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out
+}
+
+.social-links li a i:hover{
+    color: #e84610;
+}
+
+#footer-details{
+    padding: 20px;
+}
+
