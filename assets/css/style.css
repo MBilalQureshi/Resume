@@ -122,3 +122,12 @@ header{
     font-weight: 300;
     letter-spacing:2px;
 }
+
+/* ---------------------------------------Hover.css */
+
+.hvr-sweep-to-bottom:before{
+    /* We'll set the transparency to 0.2, which will give a nice gray transparency. */
+    background-color: rgba(0,0,0,0.2);
+    /* Again, I'm going to set the height to 120px so that it fills our entire menu item. */
+    height: 120px;
+}
