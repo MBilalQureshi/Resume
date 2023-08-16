@@ -21,6 +21,10 @@
     background-color: #525252;
 }
 
+.bg-color-three-reasons{
+    background-color: #fff;
+}
+
 /* --------------------------------- Tests */
 
 
@@ -53,6 +57,29 @@ h4{
 
 .inline-block{
     display: inline-block;
+}
+
+.row-table{
+    /* Our display is going to be just set to table.
+    By doing this, we can then specify its child columns as table cells, as we mentioned before, 
+    which as we've said, ensures that the columns will remain equal height, regardless of their content. */
+    display: table;
+}
+
+.section-column{
+    display: table-cell;
+    padding: 0 30px 30px;
+    /* And we're going to set our float to none.
+    Older versions of Bootstrap used to use floats.
+    We're just setting it to none here, just to make sure that our column doesn't end up with any unsightly breaks. */
+    float: none;
+}
+
+.section-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /* -------------------------------Heading */
