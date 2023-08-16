@@ -250,3 +250,50 @@ footer{
 .three-reasons-heading{
     margin-bottom: 15px;
 }
+
+/* -------------------------------Personal info */
+
+.personal-info-item{
+    margin-bottom: 20px;
+    display: block;
+    /*  set the clear to both so that no other items can appear at either side of it in case, we were using floats. */
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right: 8px;
+    /* Remember that a <div> is a block level element by default, which means it starts and ends with a new line and occupies the maximum horizontal space available.
+    An inline block on the other hand allows us to put two divs side-by-side, and that's what we want to do here. */
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;   
+}
+
+.personal-info-item .key{
+    /* The first thing I want to do is give the width of the key as 30% because we're going to set the width of the value to 60%, which gives us an overall of 90%.
+    Then we're going to put some margins and padding on either side of the combined percentages of both key and value, 
+    which will give us some breathing space and make everything look nice. */
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    /* set the vertical-align to top so that it hugs the top of the <div> as much as possible. */
+    vertical-align: top;
+}
+
+.personal-info-item .key p{
+    font-weight: 700;
+
+}
+
+.personal-info-item .value{
+    /* The key occupies 30% of the width.
+    Our value, as I said a moment ago, is going to occupy 60%. */
+    width: 60%;
+    /* I'm setting the position to relative, too, because I want it to be relative to its predecessor. */
+    /* comment, above text didnt made sense */
+    position: relative;
+}
