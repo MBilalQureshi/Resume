@@ -31,9 +31,9 @@
                         <!-- we're going to use the class of list-inline, which is supplied by Bootstrap and stops a list from displaying vertically and displays it horizontally instead. -->
                         <!-- HACK: We used the menucontainer class to close the gaps between the nav elements, set font-size to 0, and to make written items visible again target #nav li { font-size:14px and padding to 0}-->
                         <ul id="nav" class="list-inline menucontainer">
-                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"><a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
-                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem"><a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a></li>
-                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem"><a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a></li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"><a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem"><a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a></li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem"><a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a></li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem"><a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a></li>
                         </ul>
                     </div>
@@ -42,8 +42,64 @@
         </div>
     </header>
 
-    <section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Work History
+                        </h3>
+                    </div>
+                </div>
 
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 so that we get the content centered and have a one column 
+                        margin down the left side.
+                        We're going to switch that offset off for tablets and larger because on the tablet, we want it to appear in three columns of content.
+                        On a desktop, we want it to appear in two columns.
+                        As we said, though, we have three content sections.
+                        But there's only room for two on the desktop, so one of them will fluidly move to the bottom below the other two. -->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <!-- we're going to put our icon in a column with a width of 2. -->
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <!-- In our <div>, our Bootstrap specification for our icon was too wide, which leaves us with 10 columns for our header and the text. -->
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                <p>
+                                    I'm a skilled Full Stack Developer with wealth of diverse life and technical experience that I bring to every project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <!-- we're going to put our icon in a column with a width of 2. -->
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                            </div>
+                            <!-- In our <div>, our Bootstrap specification for our icon was too wide, which leaves us with 10 columns for our header and the text. -->
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>
+                                    I'm a skilled Full Stack Developer with wealth of diverse life and technical experience that I bring to every project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="container-fluid">
