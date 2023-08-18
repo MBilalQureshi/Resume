@@ -32,6 +32,10 @@
 .bg-color-work-history{
     background-color: #9b59b6;
 }
+
+.bg-color-contact{
+    background-color: #fff;
+}
 /* --------------------------------- Tests */
 
 
@@ -400,4 +404,41 @@ That's actually going to bring it above our employers text. */
 
 .history-items{
     margin-bottom: px;
+}
+
+/* --------------------------------- Contact form */
+.contact-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 10px;
+    /* Below is how we center content */
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* --------------------------------- Media Query */
+/* Our media query is only going to take effect when the width of the screen is 992px or greater.
+So I'm going to set @media(min-width) to 992px.
+So when our screen size is wider than 992px. */
+
+@media(min-width :992px){
+    .center-form{
+        padding-top: 30px;
+        min-height: 240px;
+        /* Below is how we center content */
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
